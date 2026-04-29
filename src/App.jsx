@@ -2,12 +2,13 @@ import { motion } from "framer-motion";
 import "./App.css";
 
 export default function Portfolio() {
+
   const projects = [
     {
       name: "Crown Vet",
       link: "https://www.crown.vet/",
       growth: "+45% bookings",
-      img: "https://plus.unsplash.com/premium_photo-1663036512129-8e236721f90d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: "https://plus.unsplash.com/premium_photo-1663036512129-8e236721f90d?q=80&w=1170&auto=format&fit=crop",
     },
     {
       name: "111 International Spa",
@@ -25,7 +26,7 @@ export default function Portfolio() {
       name: "Maavi Hospitals",
       link: "https://maavihospitals.com/",
       growth: "+38% appointments",
-      img: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGVhbHRoY2FyZXxlbnwwfHwwfHx8MA%3D%3D",
+      img: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=700&q=60",
     },
     {
       name: "Swecha Fashions",
@@ -55,29 +56,34 @@ export default function Portfolio() {
     {
       title: "Booking Systems",
       desc: "Simple appointment systems for your clients.",
-      img: "https://images.unsplash.com/photo-1522241112606-b5d35a468795?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: "https://images.unsplash.com/photo-1522241112606-b5d35a468795?auto=format&fit=crop&w=1170&q=80",
     },
   ];
 
   return (
-    <div className="bg-main text-dark">
+    <div className="bg-main">
+
       {/* NAVBAR */}
       <header className="navbar">
         <div className="container-custom nav-inner">
           <h1 className="logo">Velora Studio</h1>
           <nav>
             <a href="#work">Work</a>
-            <a class="ml-2" href="#contact">
-              Contact
-            </a>
+            <a className="ml-4" href="#contact">Contact</a>
           </nav>
         </div>
       </header>
 
       {/* HERO */}
-      <section className="section hero">
+      <section className="section">
         <div className="container-custom grid md:grid-cols-2 gap-12 items-center">
-          <motion.div className="flex flex-col justify-center text-center md:text-left items-center md:items-start">
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="flex flex-col items-center md:items-start text-center md:text-left"
+          >
             <h1 className="hero-title">
               Websites That Help Your Business Grow
             </h1>
@@ -87,10 +93,11 @@ export default function Portfolio() {
               to increase bookings, sales, and customer reach.
             </p>
 
-            <div className="hero-buttons mt-4">
+            <div className="hero-buttons mt-6">
               <a
                 href="https://wa.me/917989919952"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary"
               >
                 Contact on WhatsApp
@@ -103,6 +110,9 @@ export default function Portfolio() {
           </motion.div>
 
           <motion.img
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
             src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=900&q=80"
             className="hero-img"
           />
@@ -112,7 +122,7 @@ export default function Portfolio() {
       {/* SERVICES */}
       <section className="section container-custom grid md:grid-cols-3 gap-6">
         {services.map((item, i) => (
-          <motion.div key={i} whileHover={{ y: -6 }} className="card">
+          <motion.div key={i} whileHover={{ y: -6 }} className="card hover-card">
             <img src={item.img} className="card-img" />
             <h3>{item.title}</h3>
             <p>{item.desc}</p>
@@ -121,17 +131,17 @@ export default function Portfolio() {
       </section>
 
       {/* WORK */}
-      <section id="work" className="section container-custom mt-8">
-    
-        <h2 className="section-title">Selected Work</h2>
+      <section id="work" className="section container-custom">
+        <h2 className="section-title mt-8">Selected Work</h2>
 
-        <div className="grid md:grid-cols-3 gap-6 mt-4">
+        <div className="grid md:grid-cols-3 gap-6 mt-6">
           {projects.map((project, i) => (
             <motion.a
               key={i}
               href={project.link}
               target="_blank"
-              whileHover={{ y: -6 }}
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.03 }}
               className="card hover-card"
             >
               <img src={project.img} className="card-img" />
@@ -145,10 +155,12 @@ export default function Portfolio() {
       {/* CTA */}
       <section id="contact" className="section text-center">
         <h2 className="section-title">Start Your Website Today</h2>
-        <div className="mt-6">
+
+        <div className="mt-8">
           <a
             href="https://wa.me/917989919952"
             target="_blank"
+            rel="noopener noreferrer"
             className="btn-primary"
           >
             Get Started
