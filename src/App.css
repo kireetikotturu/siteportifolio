@@ -66,9 +66,11 @@ html {
 
   /* LOGO */
   .logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.6rem;
-    font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #222;
+  letter-spacing: 0.5px;
   }
 
   /* HERO */
