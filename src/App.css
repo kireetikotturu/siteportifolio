@@ -165,10 +165,11 @@ html {
 
   /* TITLES */
   .section-title {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2rem;
-    font-weight: 600;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: #111; /* 🔥 important fix */
   }
 
   /* FOOTER */
