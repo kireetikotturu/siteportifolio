@@ -7,7 +7,7 @@ export default function Portfolio() {
     {
       name: "Crown Vet",
       link: "https://www.crown.vet/",
-      growth: "+45% bookings",
+      growth: "+25% bookings",
       img: "https://plus.unsplash.com/premium_photo-1663036512129-8e236721f90d?q=80&w=1170&auto=format&fit=crop",
     },
     {
@@ -19,25 +19,25 @@ export default function Portfolio() {
     {
       name: "Mirrors Luxury Salon",
       link: "https://www.mirrorsluxurysalons.com/",
-      growth: "+42% revenue",
+      growth: "+40% revenue",
       img: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80",
     },
     {
       name: "Maavi Hospitals",
       link: "https://maavihospitals.com/",
-      growth: "+38% appointments",
+      growth: "+30% appointments",
       img: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=700&q=60",
     },
     {
       name: "Swecha Fashions",
       link: "https://swechafashions.com/",
-      growth: "+47% sales",
+      growth: "+35% sales",
       img: "https://images.unsplash.com/photo-1521336575822-6da63fb45455?auto=format&fit=crop&w=800&q=80",
     },
     {
       name: "Kalpraag Clothing",
       link: "https://kalpraag.com/",
-      growth: "+52% growth",
+      growth: "+40% growth",
       img: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80",
     },
   ];
@@ -68,7 +68,7 @@ export default function Portfolio() {
         <div className="container-custom nav-inner">
           <h1 className="logo">Velora Studio</h1>
           <nav>
-            <a href="#work">Work</a>
+            <a href="#work">Our Work</a>
             <a className="ml-4" href="#contact">Contact</a>
           </nav>
         </div>
@@ -96,6 +96,7 @@ export default function Portfolio() {
             <div className="hero-buttons mt-6">
               <a
                 href="https://wa.me/917989919952"
+                text=Hello%20I%20want%20to%20know%20more%20about%20your%20services"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
@@ -132,7 +133,7 @@ export default function Portfolio() {
 
       {/* WORK */}
       <section id="work" className="section container-custom">
-        <h2 className="section-title mt-8">Selected Work</h2>
+        <h2 className="section-title mt-8">Client Success Stories</h2>
 
         <div className="grid md:grid-cols-3 gap-6 mt-6">
           {projects.map((project, i) => (
