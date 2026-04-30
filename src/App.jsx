@@ -68,7 +68,7 @@ export default function Portfolio() {
         <div className="container-custom nav-inner">
           <h1 className="logo">Velora Studio</h1>
           <nav>
-            <a href="#work">Our Work</a>
+            <a href="#work">Portfolio</a>
             <a className="ml-4" href="#contact">Contact</a>
           </nav>
         </div>
@@ -95,7 +95,7 @@ export default function Portfolio() {
 
             <div className="hero-buttons mt-6">
               <a
-                href="https://wa.me/917989919952?text=Hello%20I%20want%20to%20know%20more%20about%20your%20services"
+                href="https://api.whatsapp.com/send?phone=917989919952&text=Hello%2C%20I%20came%20across%20your%20website%20and%20would%20like%20to%20know%20more%20about%20your%20services."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
@@ -158,7 +158,7 @@ export default function Portfolio() {
 
         <div className="mt-8">
           <a
-            href="https://wa.me/917989919952"
+            href="https://api.whatsapp.com/send?phone=917989919952&text=Hello%2C%20I%20came%20across%20your%20website%20and%20would%20like%20to%20know%20more%20about%20your%20services."
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"
