@@ -95,8 +95,7 @@ export default function Portfolio() {
 
             <div className="hero-buttons mt-6">
               <a
-                href="https://wa.me/917989919952"
-                text=Hello%20I%20want%20to%20know%20more%20about%20your%20services"
+                href="https://wa.me/917989919952?text=Hello%20I%20want%20to%20know%20more%20about%20your%20services"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
