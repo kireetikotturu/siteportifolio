@@ -169,7 +169,7 @@ export default function Portfolio() {
       </section>
 
       <footer className="footer">
-        © {new Date().getFullYear()} Velora Studio
+        © 2025 - {new Date().getFullYear()} Velora Studio
       </footer>
     </div>
   );
