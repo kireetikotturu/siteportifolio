@@ -51,6 +51,7 @@ html {
     max-width: 1120px;
     margin: 0 auto;
     padding: 10px;
+     flex-wrap: wrap; 
   }
 
   .nav-inner a {
@@ -71,7 +72,28 @@ html {
   font-weight: 600;
   color: #222;
   letter-spacing: 0.5px;
+    white-space: nowrap;
   }
+
+  @media (max-width: 640px) {
+  .nav-inner {
+    flex-direction: column; /* stack logo + nav */
+    gap: 8px;
+  }
+
+  .nav-inner nav {
+    display: flex;
+    gap: 16px;
+  }
+
+  .nav-inner a {
+    margin-left: 0; /* remove extra spacing */
+  }
+
+  .logo {
+    font-size: 1.3rem; /* smaller logo on mobile */
+  }
+}
 
   /* HERO */
   .hero-title {
