@@ -113,7 +113,7 @@ export default function Portfolio() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
-            src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=900&q=80"
+            src="https://res.cloudinary.com/dlz2pxovx/image/upload/v1777599842/Gemini_Generated_Image_hebt89hebt89hebt_tgh1bj.png"
             className="hero-img"
           />
         </div>
